@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="la.droid.qr.services"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="ilproject.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ilproject.Client"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/scan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="la.droid.qr.services.Encode"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/encode" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="la.droid.qr.services.Decode"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/decode" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ilproject.Waiter"
+            android:label="@string/title_activity_waiter" >
+        </activity>
+    </application>
+
+    <uses-sdk android:minSdkVersion="5" />
+
+</manifest>
